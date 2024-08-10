@@ -24,7 +24,8 @@
     --main-bg-color: #071952;
     --sec-color: #EBF4F6;
     --ter-color: #37B7C3;
-    --shadow-b-color: #088395;
+    --shadow-b-color: #37b7c338;
+    --curriculo_bg: #0b1534;
 
     --fonte-prim: "Anton SC", sans-serif;
     --fonte-sec: "Montserrat", sans-serif;
@@ -161,6 +162,89 @@ body {
     color: var(--sec-color);
 }
 
+/* estilos exclusivos curriculo */
+
+.corpo_curriculo {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--main-bg-color);
+}
+
+.principal_resume {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.experiencia, .formacao {
+    background-color: var(--curriculo_bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #00000080;
+    margin: 10px;
+}
+
+.experiencia h2, .formacao h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: var(--sec-color);
+    font-family: var(--fonte-prim);
+}
+
+.conteudo_experiencia h3 {
+    font-size: 1.5em;
+    color: var(--ter-color);
+    margin-bottom: 10px;
+    font-family: var(--fonte-sec);
+}
+
+.conteudo_experiencia p {
+    font-size: 1em;
+    color: var(--sec-color);
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: var(--fonte-sec);
+}
+
+.idi_hab {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.idiomas, .habilidades {
+    background-color: var(--curriculo_bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #00000080;
+    width: 48%;
+    margin: 10px;
+    font-family: var(--fonte-sec);
+}
+
+.idiomas h2, .habilidades h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: var(--sec-color);
+    text-align: center;
+    font-family: var(--fonte-prim);
+}
+
+.idiomas ul, .habilidades ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.idiomas li, .habilidades li {
+    font-size: 1em;
+    color: var(--sec-color);
+    margin-bottom: 10px;
+}
+
+
+
 @media (max-width: 750px ){
     .cabecalho{
         padding: 8%;
@@ -191,5 +275,18 @@ body {
         width:auto;
     }
 
+    .idi_hab {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .idiomas, .habilidades {
+        padding: 20px;
+        margin: 10px;
+        width: auto;
+    }
     
 }
