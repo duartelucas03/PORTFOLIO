@@ -275,6 +275,12 @@ body {
         width:auto;
     }
 
+
+    .barra_cabecalho {
+        gap: 8%;
+        font-size: 100%;
+    }
+
     .idi_hab {
         display: flex;
         gap: 20px;
@@ -290,3 +296,10 @@ body {
     }
     
 }
+
+@media (max-width: 300px ){
+    .barra_cabecalho {
+        gap: 6%;
+        font-size: 85%;
+    }
+}   
