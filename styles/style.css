@@ -179,7 +179,7 @@ body {
 
 .experiencia, .formacao {
     background-color: var(--curriculo_bg);
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px #00000080;
     margin: 10px;
