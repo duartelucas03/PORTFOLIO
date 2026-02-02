@@ -177,7 +177,7 @@ body {
     gap: 40px;
 }
 
-.experiencia, .formacao {
+.experiencia, .formacao, .cursos , .habilidades, .engajamento {
     background-color: var(--curriculo_bg);
     padding: 30px;
     border-radius: 8px;
@@ -185,7 +185,7 @@ body {
     margin: 10px;
 }
 
-.experiencia h2, .formacao h2 {
+.experiencia h2, .formacao h2, .cursos h2, .habilidades h2, .engajamento h2 {
     text-align: center;
     font-size: 1.8em;
     margin-bottom: 20px;
@@ -208,36 +208,21 @@ body {
     font-family: var(--fonte-sec);
 }
 
-.idi_hab {
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-}
-
-.idiomas, .habilidades {
+.engajamento, .habilidades {
     background-color: var(--curriculo_bg);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px #00000080;
-    width: 48%;
     margin: 10px;
     font-family: var(--fonte-sec);
 }
 
-.idiomas h2, .habilidades h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: var(--sec-color);
-    text-align: center;
-    font-family: var(--fonte-prim);
-}
-
-.idiomas ul, .habilidades ul {
+ul {
     list-style-type: disc;
     padding-left: 20px;
 }
 
-.idiomas li, .habilidades li {
+li {
     font-size: 1em;
     color: var(--sec-color);
     margin-bottom: 10px;
@@ -245,7 +230,7 @@ body {
 
 
 
-@media (max-width: 750px ){
+@media (max-width: 980px ){
     .cabecalho{
         padding: 8%;
     }
@@ -281,13 +266,6 @@ body {
         font-size: 100%;
     }
 
-    .idi_hab {
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
-        align-items: center;
-        
-    }
 
     .idiomas, .habilidades {
         padding: 20px;
