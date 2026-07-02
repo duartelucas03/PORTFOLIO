@@ -73,6 +73,7 @@
     line-height: 1.4;
     flex-grow: 1;
     color: var(--ter-color);
+    font-family: var(--fonte-sec);
 }
 
 .card_projeto_tags {
