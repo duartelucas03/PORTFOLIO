@@ -162,6 +162,11 @@ body {
     color: var(--sec-color);
 }
 
+.cabecalho_link_ativo {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /* estilos exclusivos curriculo */
 
 .corpo_curriculo {

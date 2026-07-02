@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    --main-bg-color: #071952;
+    --sec-color: #EBF4F6;
+    --ter-color: #37B7C3;
+    --shadow-b-color: #37b7c338;
+    --curriculo_bg: #0b1534;
+
+    --fonte-prim: "Anton SC", sans-serif;
+    --fonte-sec: "Montserrat", sans-serif;
+}
+
+.secao_projetos {
+    padding: 2rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.secao_projetos .paragrafo_apresentacao {
+    margin-bottom: 2rem;
+}
+
+
+/* grid responsivo dos cards */
+.grade_projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card_projeto {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card_projeto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card_projeto_imagem {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #e9e9e9;
+    /* aparece caso a imagem ainda não exista */
+}
+
+.card_projeto_conteudo {
+    padding: 1rem 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card_projeto_titulo {
+    margin: 0 0 0.5rem;
+    font-size: 1.15rem;
+    color: var(--ter-color);
+}
+
+.card_projeto_descricao {
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    flex-grow: 1;
+    color: var(--ter-color);
+}
+
+.card_projeto_tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.card_projeto_links {
+    display: flex;
+    gap: 0.6rem;
+}
+
+/* variação do botão já existente (.botao_), caso queira diferenciar
+   o botão "Demonstração" do botão "Código" */
+.botao_secundario {
+    background-color: transparent;
+    border: 1px solid currentColor;
+}
+
+/* Responsivo: telas pequenas ficam em coluna única automaticamente
+   graças ao auto-fit do grid acima, mas ajustamos o espaçamento */
+@media (max-width: 480px) {
+    .secao_projetos {
+        padding: 1.5rem 1rem;
+    }
+}
