@@ -59,6 +59,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    font-family: var(--fonte-sec);
 }
 
 .card_projeto_titulo {
@@ -73,7 +74,7 @@
     line-height: 1.4;
     flex-grow: 1;
     color: var(--ter-color);
-    font-family: var(--fonte-sec);
+    
 }
 
 .card_projeto_tags {
@@ -98,15 +99,12 @@
     gap: 0.6rem;
 }
 
-/* variação do botão já existente (.botao_), caso queira diferenciar
-   o botão "Demonstração" do botão "Código" */
+
 .botao_secundario {
     background-color: transparent;
     border: 1px solid currentColor;
 }
 
-/* Responsivo: telas pequenas ficam em coluna única automaticamente
-   graças ao auto-fit do grid acima, mas ajustamos o espaçamento */
 @media (max-width: 480px) {
     .secao_projetos {
         padding: 1.5rem 1rem;
